@@ -1,0 +1,52 @@
+﻿<Page x:Class="Salon.Pages.AdminPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Salon.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="750" d:DesignWidth="1000"
+      Title="AdminPage">
+
+    <Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="130"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#FF81D4FA" Offset="0"/>
+                    <GradientStop Color="#FFF8BBD0" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            
+            <Grid Grid.Column="1" Width="650" Height="500"/>
+
+            <StackPanel Background="#FF81D4FA" Grid.ColumnSpan="2" VerticalAlignment="Top" Height="550" Width="150" HorizontalAlignment="Left">
+                <TextBlock Text="Администратор" Foreground="White" FontSize="20" Margin="0, 30, 0, 50"/>
+                <Button x:Name="BTServices" Content="Услуги" Style="{StaticResource AdminBT}" Click="BTServices_Click"/>
+                <Button x:Name="BTClients" Content="Клиенты" Style="{StaticResource AdminBT}" Click="BTClients_Click"/>
+                <Button x:Name="BTEmployees" Content="Сотрудники" Style="{StaticResource AdminBT}" Click="BTEmployees_Click"/>
+                
+                <Button Content="Добавить" Margin="0,40, 0, 0" Style="{StaticResource AddChangeBT}" Click="Button_Click"/>
+                <Button Content="Изменить" Margin="0,5, 0, 0" Style="{StaticResource AddChangeBT}"/>
+                <Button Content="Удалить" Margin="0,5, 0, 0" Style="{StaticResource DeleteBT}"/>
+            </StackPanel>
+
+            <Grid Grid.Column="1" Width="850" Margin="20, 0, 0, 0">
+                <DataGrid x:Name="RegistrationsDataGrid" AutoGenerateColumns="False" CanUserAddRows="False" Background="White">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ID записи" Binding="{Binding IDRegistration}" Width="*"/>
+                        <DataGridTextColumn Header="Дата и время записи" Binding="{Binding DateRegistration}" Width="*"/>
+                        <DataGridTextColumn Header="ID клиента" Binding="{Binding ClientID}" Width="*"/>
+                        <DataGridTextColumn Header="ID услуги" Binding="{Binding ServiceID}" Width="*"/>
+                        <DataGridTextColumn Header="ID мастера" Binding="{Binding MasterID}" Width="*"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+
+        </Grid>
+    </Grid>
+</Page>
