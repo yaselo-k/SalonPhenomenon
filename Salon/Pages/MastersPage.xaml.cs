@@ -32,9 +32,9 @@ namespace Salon.Pages
             AdminFrame.MainFrame.Navigate(new AdminPage());
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void AddNewMaster_Click(object sender, RoutedEventArgs e)
         {
-
+            AdminFrame.MainFrame.Navigate(new AddMaster());
         }
     }
 }
