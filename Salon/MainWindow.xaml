@@ -5,13 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Salon"
         mc:Ignorable="d"
-        Title="Парикмахерская 'Феномен'" Height="750" Width="1000" MinHeight="550" MaxHeight="750" MinWidth="800" MaxWidth="1000" WindowStartupLocation="CenterScreen">
+        Title="Парикмахерская 'Феномен'" Height="750" Width="1000" MinHeight="550" MinWidth="800"
+        WindowStartupLocation="CenterScreen">
     <Grid>
 
         <Grid.Background>
             <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                <GradientStop Color="#FF81D4FA" Offset="0"/>
-                <GradientStop Color="#FFF8BBD0" Offset="1"/>
+                <GradientStop Color="#f2dcdd" Offset="0"/>
+                <GradientStop Color="#dde0e7" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
         
@@ -21,11 +22,11 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Orientation="Vertical" Width="180" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,40,15,0" Grid.ColumnSpan="2">
-            <TextBlock Text="Феномен" Foreground="White" FontSize="30"/>
-            <TextBlock Text="Парикмахерская" Foreground="White" FontSize="20"/>
+        <StackPanel Style="{StaticResource SPLabel}">
+            <TextBlock Text="Феномен" Foreground="#28313a" FontSize="30"/>
+            <TextBlock Text="Парикмахерская" Foreground="#28313a" FontSize="20"/>
         </StackPanel>
-        
+
         <Image Source="/Resources/logo.png"/>
 
         <Frame Grid.Row="1" x:Name="myFrame" NavigationUIVisibility="Hidden" Background="White"/>

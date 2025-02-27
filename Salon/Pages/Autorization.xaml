@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Salon.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="400" d:DesignWidth="600"
-      Title="Autorization">
+      Title="Авторизация">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -15,7 +15,7 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="0" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,0,0,20">
+        <StackPanel Style="{StaticResource SPAutorization}">
             <TextBlock Text="Авторизация" Style="{StaticResource LBAutorization}"/>
         </StackPanel>
 
@@ -29,8 +29,8 @@
             <Button Content="Войти" x:Name="LogIn" Style="{StaticResource LogIN}" Click="LogIn_Click">
                 <Button.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                        <GradientStop Color="#FFD1DC" Offset="0"/>
-                        <GradientStop Color="#FFF0F8" Offset="1"/>
+                        <GradientStop Color="#f2dcdd" Offset="0"/>
+                        <GradientStop Color="#dde0e7" Offset="1"/>
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>

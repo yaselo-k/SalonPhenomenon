@@ -16,6 +16,7 @@
                 <DataGridTextColumn Header="Цена" Binding="{Binding CostService}" Width="*"/>
             </DataGrid.Columns>
         </DataGrid>
+
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom">
             <Button Content="Добавить" Style="{StaticResource AddChangeBT}"/>
             <Button Content="Изменить" Style="{StaticResource AddChangeBT}"/>

@@ -20,10 +20,11 @@
             </DataGrid.Columns>
         </DataGrid>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom">
-            <Button Content="Добавить" Style="{StaticResource AddChangeBT}"/>
+            <Button Content="Добавить" Style="{StaticResource AddChangeBT}" Click="Button_Click"/>
             <Button Content="Изменить" Style="{StaticResource AddChangeBT}"/>
             <Button Content="Удалить" Style="{StaticResource DeleteBT}"/>
         </StackPanel>
-        <Button x:Name="BackMasters" Content="Назад" Style="{StaticResource AdminBT}" Height="40" Width="100" VerticalAlignment="Bottom" HorizontalAlignment="Left" Click="BackMasters_Click"/>
+        <Button x:Name="BackMasters" Content="Назад" Style="{StaticResource AdminBT}" Height="40" 
+                Width="100" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
     </Grid>
 </Page>
