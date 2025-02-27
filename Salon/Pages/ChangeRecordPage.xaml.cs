@@ -19,10 +19,10 @@ namespace Salon.Pages
     /// <summary>
     /// Логика взаимодействия для ChangeRecordPage.xaml
     /// </summary>
-    public partial class ChangeRecordPage : Page
+    public partial class ChangeMaster : Page
     {
         private Registrations _currentRegistrations = new Registrations();
-        public ChangeRecordPage(Registrations selectedRegistrations)
+        public ChangeMaster(Registrations selectedRegistrations)
         {
             InitializeComponent();
             if (selectedRegistrations != null)

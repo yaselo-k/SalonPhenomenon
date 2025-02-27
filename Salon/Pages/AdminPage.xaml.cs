@@ -128,7 +128,7 @@ namespace Salon.Pages
             }
 
             // Передаем выбранную запись в ChangeRecordPage
-            AdminFrame.MainFrame.Navigate(new ChangeRecordPage(selectedRegistration));
+            AdminFrame.MainFrame.Navigate(new ChangeMaster(selectedRegistration));
         }
     }
 }

@@ -45,6 +45,7 @@ namespace Salon.Pages
                     context.Masters.Add(_currentMasters);
                     context.SaveChanges();
                     MessageBox.Show("Мастер успешно добавлен.", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+                    AdminFrame.MainFrame.Navigate(new EmployeesPage());
                 }
             }
             catch (Exception ex)
@@ -55,7 +56,7 @@ namespace Salon.Pages
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-            
+            AdminFrame.MainFrame.Navigate(new EmployeesPage());
         }
     }
 }
