@@ -15,9 +15,7 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Style="{StaticResource SPAutorization}">
-            <TextBlock Text="Авторизация" Style="{StaticResource LBAutorization}"/>
-        </StackPanel>
+        <TextBlock Text="Авторизация" Style="{StaticResource LBAutorization}" Margin="0,0,0,20"/>
 
         <StackPanel Grid.Row="1" Orientation="Vertical" Margin="0,0,0,20">
             <TextBlock Text="Логин:" Style="{StaticResource LogPass}"/>
@@ -26,13 +24,7 @@
             <TextBlock Text="Пароль:" Style="{StaticResource LogPass}"/>
             <PasswordBox Name="PasswordBox" Style="{StaticResource PBPass}"/>
 
-            <Button Content="Войти" x:Name="LogIn" Style="{StaticResource LogIN}" Click="LogIn_Click">
-                <Button.Background>
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                        <GradientStop Color="#f2dcdd" Offset="0"/>
-                        <GradientStop Color="#dde0e7" Offset="1"/>
-                    </LinearGradientBrush>
-                </Button.Background>
+            <Button x:Name="LogIn" Content="Войти" Style="{StaticResource GradientLoginButton}" Click="LogIn_Click">
             </Button>
         </StackPanel>
     </Grid>

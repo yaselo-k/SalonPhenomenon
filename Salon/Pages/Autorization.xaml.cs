@@ -17,6 +17,7 @@ namespace Salon.Pages
 
         private void LogIn_Click(object sender, RoutedEventArgs e)
         {
+            AdminFrame.MainFrame.Navigate(new AdminPage());
             try
             {
                 var user = DbConnect.modelOdb.Users.FirstOrDefault(x =>

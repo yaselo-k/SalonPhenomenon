@@ -4,75 +4,6 @@
              xmlns:local="clr-namespace:Salon"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <Style TargetType="TextBlock" x:Key="LogPass">
-            <Setter Property="FontSize" Value="15"/>
-            <Setter Property="FontWeight" Value="DemiBold"/>
-            <Setter Property="Foreground" Value="#28313a"/>
-            <Setter Property="Margin" Value="0,10,0,5"/>
-        </Style>
-
-        <Style TargetType="Button" x:Key="LogIN">
-            <Setter Property="Foreground" Value="#28313a"/>
-            <Setter Property="FontSize" Value="17"/>
-            <Setter Property="FontWeight" Value="DemiBold"/>
-            <Setter Property="Height" Value="40"/>
-            <Setter Property="Margin" Value="0,20,0,0"/>
-        </Style>
-
-        <Style TargetType="TextBlock" x:Key="LBAutorization">
-            <Setter Property="FontSize" Value="30"/>
-            <Setter Property="Foreground" Value="#28313a"/>
-        </Style>
-
-        <Style TargetType="TextBlock" x:Key="LBName">
-            <Setter Property="FontSize" Value="14"/>
-            <Setter Property="Foreground" Value="#FF757575"/>
-            <Setter Property="Margin" Value="0,5,0,0"/>
-        </Style>
-
-        <Style TargetType="TextBox" x:Key="TBLogin">
-            <Setter Property="Height" Value="30"/>
-            <Setter Property="FontSize" Value="15"/>
-            <Setter Property="Padding" Value="5"/>
-            <Setter Property="Background" Value="#FFF0F0F0"/>
-            <Setter Property="BorderBrush" Value="#FFCCCCCC"/>
-        </Style>
-
-        <Style TargetType="PasswordBox" x:Key="PBPass">
-            <Setter Property="Height" Value="30"/>
-            <Setter Property="FontSize" Value="15"/>
-            <Setter Property="Padding" Value="5"/>
-            <Setter Property="Background" Value="#FFF0F0F0"/>
-            <Setter Property="BorderBrush" Value="#FFCCCCCC"/>
-        </Style>
-
-        <Style TargetType="Button" x:Key="AdminBT">
-            <Setter Property="FontSize" Value="16"/>
-            <Setter Property="FontWeight" Value="Bold"/>
-            <Setter Property="Background" Value="#f2dcdd"/>
-            <Setter Property="Foreground" Value="#28313a"/>
-            <Setter Property="Height" Value="40"/>
-            <Setter Property="Margin" Value="4"/>
-        </Style>
-
-        <Style TargetType="Button" x:Key="AddChangeBT">
-            <Setter Property="FontSize" Value="16"/>
-            <Setter Property="FontWeight" Value="Bold"/>
-            <Setter Property="Background" Value="#28313a"/>
-            <Setter Property="Foreground" Value="White"/>
-            <Setter Property="Height" Value="40"/>
-            <Setter Property="Margin" Value="4"/>
-        </Style>
-
-        <Style TargetType="Button" x:Key="DeleteBT">
-            <Setter Property="FontSize" Value="16"/>
-            <Setter Property="FontWeight" Value="Bold"/>
-            <Setter Property="Background" Value="#f2dcdd"/>
-            <Setter Property="Foreground" Value="#28313a"/>
-            <Setter Property="Height" Value="40"/>
-            <Setter Property="Margin" Value="4"/>
-        </Style>
-
         <Style TargetType="StackPanel" x:Key="SPLabel">
             <Setter Property="Orientation" Value="Vertical"/>
             <Setter Property="Width" Value="180"/>
@@ -80,12 +11,94 @@
             <Setter Property="VerticalAlignment" Value="Top"/>
             <Setter Property="Margin" Value="20,40,15,0"/>
         </Style>
+        <Style TargetType="TextBlock" x:Key="LogPass">
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="FontWeight" Value="DemiBold"/>
+            <Setter Property="Foreground" Value="#1b0e21"/>
+            <Setter Property="Margin" Value="5,10,0,5"/>
+            <Setter Property="FontFamily" Value="Candara Light"/>
+        </Style>
 
-        <Style TargetType="StackPanel" x:Key="SPAutorization">
-            <Setter Property="Orientation" Value="Vertical"/>
+        <Style x:Key="GradientLoginButton" TargetType="Button">
+            <Setter Property="FontFamily" Value="Candara Light"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="DemiBold"/>
+            <Setter Property="Margin" Value="0,30,0,0"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="BorderBrush" Value="White"/>
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#534456" Offset="0"/>
+                        <GradientStop Color="#1b0e21" Offset="1"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="TextBlock" x:Key="LBAutorization">
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="#1b0e21"/>
+            <Setter Property="FontFamily" Value="Candara Light"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
-            <Setter Property="VerticalAlignment" Value="Top"/>
-            <Setter Property="Margin" Value="0,0,0,20"/>
+        </Style>
+
+        <Style TargetType="TextBlock" x:Key="LBName">
+            <Setter Property="FontSize" Value="10"/>
+            <Setter Property="Foreground" Value="#FF757575"/>
+            <Setter Property="Margin" Value="0,30,0,0"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="FontFamily" Value="Candara Light"/>
+        </Style>
+
+        <Style TargetType="TextBox" x:Key="TBLogin">
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="Background" Value="#FFF0F0F0"/>
+            <Setter Property="BorderBrush" Value="#FFCCCCCC"/>
+            <Setter Property="FontFamily" Value="Candara Light"/>
+        </Style>
+
+        <Style TargetType="PasswordBox" x:Key="PBPass">
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="Background" Value="#FFF0F0F0"/>
+            <Setter Property="BorderBrush" Value="#FFCCCCCC"/>
+            <Setter Property="FontFamily" Value="Candara Light"/>
+        </Style>
+
+        <Style TargetType="Button" x:Key="AdminBT">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Background" Value="#FFF8BBD0"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Margin" Value="4"/>
+            <Setter Property="FontFamily" Value="Candara Light"/>
+        </Style>
+
+        <Style TargetType="Button" x:Key="AddChangeBT">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Background" Value="#534456"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Margin" Value="4"/>
+            <Setter Property="FontFamily" Value="Candara Light"/>
+        </Style>
+
+        <Style TargetType="Button" x:Key="DeleteBT">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Background" Value="#3e1b39"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Margin" Value="4"/>
+            <Setter Property="FontFamily" Value="Candara Light"/>
         </Style>
     </Application.Resources>
 </Application>

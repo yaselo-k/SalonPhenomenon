@@ -24,8 +24,8 @@
         </Grid.RowDefinitions>
 
         <StackPanel Style="{StaticResource SPLabel}" Grid.ColumnSpan="2" Width="280">
-            <TextBlock Text="Новая запись" Foreground="#28313a" FontSize="15"/>
-            <TextBlock Text="Все поля обязательны для заполнения" Foreground="#28313a"/>
+            <TextBlock Text="Новая запись" Foreground="#3e1b39" FontSize="15"/>
+            <TextBlock Text="Все поля обязательны для заполнения" Foreground="#3e1b39"/>
         </StackPanel>
 
         <TextBlock Text="Дата и время *" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource LBName}"/>

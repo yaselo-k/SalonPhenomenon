@@ -6,15 +6,8 @@
         xmlns:local="clr-namespace:Salon"
         mc:Ignorable="d"
         Title="Парикмахерская 'Феномен'" Height="750" Width="1000" MinHeight="550" MinWidth="800"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen" Background="White">
     <Grid>
-
-        <Grid.Background>
-            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                <GradientStop Color="#f2dcdd" Offset="0"/>
-                <GradientStop Color="#dde0e7" Offset="1"/>
-            </LinearGradientBrush>
-        </Grid.Background>
         
         <Grid.RowDefinitions>
             <RowDefinition Height="1.5*"/>
@@ -22,12 +15,17 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Style="{StaticResource SPLabel}">
-            <TextBlock Text="Феномен" Foreground="#28313a" FontSize="30"/>
-            <TextBlock Text="Парикмахерская" Foreground="#28313a" FontSize="20"/>
-        </StackPanel>
+        <TextBlock Text="Парикмахерская 'Феномен'"
+       Style="{StaticResource LBName}" Margin="10,8,0,0"
+       FontFamily="Open Sans" VerticalAlignment="Top" HorizontalAlignment="Left"/>
 
-        <Image Source="/Resources/logo.png"/>
+        <Image Source="/Resources/logovs.jpg"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Margin="0, 20, 0, 0"
+            Width="350"
+            Height="130">
+        </Image>
 
         <Frame Grid.Row="1" x:Name="myFrame" NavigationUIVisibility="Hidden" Background="White"/>
     </Grid>
